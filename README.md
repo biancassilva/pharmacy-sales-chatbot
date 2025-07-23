@@ -300,23 +300,6 @@ Automated follow-up capabilities:
 2. Update integration tests for conversation flows
 3. Test with various pharmacy profiles and scenarios
 
-### Production Deployment
-
-For production use:
-
-1. Replace mock functions with real implementations
-2. Add proper error handling and logging
-3. Implement rate limiting and API quotas
-4. Add monitoring and analytics
-5. Set up proper email and calendar integrations
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Submit a pull request
 
 ## License
 
