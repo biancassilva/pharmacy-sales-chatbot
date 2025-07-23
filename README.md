@@ -8,9 +8,10 @@ A sophisticated chatbot simulation for handling inbound calls from pharmacies, b
 
 - **Caller Recognition**: Identifies existing pharmacies using phone number lookup
 - **Intelligent Conversations**: Uses OpenAI GPT for natural language processing
-- **Information Collection**: Conversationally gathers pharmacy details from new leads
+- **Information Collection**: Conversationally gathers pharmacy details from new leads with robust fallback logic
 - **High Volume Support**: Special handling for pharmacies with 1000+ prescriptions
 - **Follow-up Actions**: Email sending and callback scheduling (mocked)
+- **Conversation State Management**: Intelligent tracking of conversation flow and collected information
 
 ### 🔌 API Integration
 
@@ -63,6 +64,18 @@ pharmacy-sales-chatbot/
    # Edit .env and add your OpenAI API key
    OPENAI_API_KEY=your_openai_api_key_here
    ```
+
+## Recent Updates
+
+### 🔧 Bug Fixes (Latest)
+
+- **Fixed Interactive Demo Conversation Flow**: Resolved issue where the bot would ask the same questions repeatedly during information collection
+- **Improved Information Extraction**: Enhanced manual fallback logic to better extract pharmacy information when AI is unavailable
+- **Better Error Handling**: Added robust error handling for AI extraction failures and JSON parsing issues
+- **Conversation State Tracking**: Fixed logic to properly track collected information and prevent duplicate questions
+- **AI Extraction Robustness**: Improved AI extraction prompts and added validation to prevent invalid data extraction
+- **Automatic Fallback**: System now automatically switches to manual extraction after 3 AI extraction failures
+- **Field-Specific AI Extraction**: Implemented targeted AI extraction for individual fields to prevent cross-field contamination and improve accuracy
 
 ## Usage
 
